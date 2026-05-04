@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<section class="section-title mb-4">
+    <p class="text-uppercase text-danger fw-bold small mb-1">Discografía</p>
+    <h2>Álbumes registrados</h2>
+</section>
+
+<div class="row g-4">
+    {% for album in albumes %}
+    <div class="col-md-4">
+        <div class="card info-card shadow-sm h-100">
+            <div class="card-body">
+                <h3>{{ album.titulo }}</h3>
+                <p class="fw-bold text-danger">Año: {{ album.anio }}</p>
+                <p>{{ album.descripcion }}</p>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p>No hay álbumes cargados.</p>
+    {% endfor %}
+</div>
+{% endblock %}

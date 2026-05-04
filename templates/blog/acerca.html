@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div class="card info-card shadow-sm">
+    <div class="card-body p-4 p-md-5">
+        <h2>Acerca del proyecto</h2>
+
+        <p>
+            Este sitio web fue desarrollado como tercera entrega del curso de Python/Django,
+            utilizando el patrón MVT (Modelo - Vista - Template).
+        </p>
+
+        <p>
+            La temática elegida es un blog musical dedicado a la banda argentina de rock <strong>Airbag</strong>,
+            con el objetivo de centralizar información sobre su historia, integrantes, álbumes y publicaciones relacionadas.
+        </p>
+
+        <p>
+            <strong>Airbag</strong> es una banda de rock originaria de Buenos Aires, Argentina, formada en el año 1999 por los hermanos
+            Patricio, Guido y Gastón Sardelli. A lo largo de su carrera, el grupo evolucionó desde un estilo más orientado al
+            pop rock hacia un sonido más sólido dentro del rock nacional, incorporando influencias del hard rock y el rock alternativo.
+        </p>
+
+        <p>
+            Entre sus álbumes más destacados se encuentran <em>Airbag</em> (2004), <em>Una hora a Tokyo</em> (2008),
+            <em>Libertad</em> (2013) y <em>Al parecer todo ha sido una trampa</em> (2021), consolidándose como una de las bandas
+            relevantes de la escena del rock argentino contemporáneo.
+        </p>
+
+        <p>El sitio permite:</p>
+
+        <ul>
+            <li>Crear y visualizar publicaciones sobre la banda.</li>
+            <li>Registrar integrantes del grupo.</li>
+            <li>Cargar información sobre álbumes.</li>
+            <li>Realizar búsquedas dentro de las publicaciones almacenadas.</li>
+            <li>Eliminar publicaciones desde la página principal con confirmación previa.</li>
+        </ul>
+
+        <p>
+            De esta manera, se integran los conceptos fundamentales de Django, como modelos, vistas, templates,
+            formularios, URLs, base de datos y herencia de plantillas.
+        </p>
+    </div>
+</div>
+{% endblock %}

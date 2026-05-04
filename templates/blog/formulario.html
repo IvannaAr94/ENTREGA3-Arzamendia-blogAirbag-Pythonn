@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card form-card shadow-sm">
+            <div class="card-body p-4 p-md-5">
+                <p class="text-uppercase text-danger fw-bold small mb-1">Carga de datos</p>
+                <h2 class="mb-4">{{ titulo }}</h2>
+
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="d-flex gap-2 mt-4">
+                        <button type="submit" class="btn btn-rock">Guardar</button>
+                        <a href="{% url 'inicio' %}" class="btn btn-outline-secondary">Volver</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

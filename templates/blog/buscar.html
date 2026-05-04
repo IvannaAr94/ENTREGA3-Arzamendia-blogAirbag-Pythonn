@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card form-card shadow-sm mb-4">
+            <div class="card-body p-4">
+                <h2>Buscar publicaciones</h2>
+                <form method="get" class="mt-3">
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-rock">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if termino %}
+<h3 class="mb-3">Resultados para: "{{ termino }}"</h3>
+
+{% if resultados %}
+<div class="row g-4">
+    {% for post in resultados %}
+    <div class="col-md-6">
+        <div class="card post-card shadow-sm h-100">
+            <div class="card-body">
+                <h4>{{ post.titulo }}</h4>
+                {% if post.subtitulo %}
+                    <h6 class="text-danger">{{ post.subtitulo }}</h6>
+                {% endif %}
+                <p>{{ post.contenido }}</p>
+                <small class="text-muted">Autor: {{ post.autor }} | Fecha: {{ post.fecha }}</small>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="alert alert-warning">No se encontraron publicaciones.</div>
+{% endif %}
+{% endif %}
+{% endblock %}

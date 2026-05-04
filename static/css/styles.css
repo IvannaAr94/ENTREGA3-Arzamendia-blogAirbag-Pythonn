@@ -1,0 +1,107 @@
+:root {
+    --rock-black: #121212;
+    --rock-dark: #1f2225;
+    --rock-red: #941212;
+    --rock-red-light: #c21f1f;
+    --rock-bg: #f4f2ef;
+}
+
+body {
+    background: var(--rock-bg);
+    color: #171717;
+    padding-top: 56px;
+}
+
+.navbar-rock,
+.footer-rock {
+    background: linear-gradient(90deg, var(--rock-black), var(--rock-dark));
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #f6d6d6 !important;
+    transform: translateY(-1px);
+}
+
+.hero {
+    background:
+        radial-gradient(circle at center, rgba(194, 31, 31, 0.42), transparent 45%),
+        linear-gradient(135deg, #0d0d0d, #7e2424, #111111);
+    border-bottom: 5px solid var(--rock-red);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.hero-label {
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    font-weight: 800;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+}
+
+.post-card,
+.info-card,
+.form-card {
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover,
+.info-card:hover,
+.form-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12) !important;
+}
+
+.post-card {
+    border-top: 4px solid var(--rock-red);
+}
+
+.btn-rock {
+    background: linear-gradient(135deg, var(--rock-red), #2b0b0b);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.55rem 1.25rem;
+}
+
+.btn-rock:hover {
+    background: linear-gradient(135deg, var(--rock-red-light), #3b0b0b);
+    color: #ffffff;
+}
+
+.btn-outline-danger {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+input.form-control,
+textarea.form-control {
+    border-radius: 12px;
+    border: 1px solid #d7d7d7;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: var(--rock-red);
+    box-shadow: 0 0 0 0.2rem rgba(139, 17, 17, 0.18);
+}
+
+footer {
+    font-weight: 600;
+}
