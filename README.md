@@ -8,7 +8,7 @@ La aplicación es un blog musical dedicado a la banda argentina **Airbag**, con 
 # Repositorio
 
 - GitHub: https://github.com/IvannaAr94/ENTREGAFINAL-Arzamendia-BlogAirbag-Python-Django
-
+-En la carpeta esta el VIDEO.
 ---
 
 # Funcionalidades principales
@@ -102,8 +102,72 @@ Maneja:
 
 # Cómo ejecutar el proyecto
 
+
 ## 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/IvannaAr94/ENTREGAFINAL-Arzamendia-BlogAirbag-Python-Django.git
+```
+
+## 2. Ingresar a la carpeta del proyecto
+
+```bash
 cd ENTREGAFINAL-Arzamendia-BlogAirbag-Python-Django
+```
+
+## 3. Crear entorno virtual
+
+```bash
+py -m venv venv
+```
+
+## 4. Activar entorno virtual
+
+### PowerShell
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\venv\Scripts\Activate.ps1
+```
+
+### CMD
+
+```cmd
+venv\Scripts\activate.bat
+```
+
+## 5. Instalar dependencias
+
+```bash
+pip install -r requirements.txt
+```
+
+## 6. Aplicar migraciones
+
+```bash
+python manage.py migrate
+```
+
+## 7. Crear superusuario
+
+```bash
+python manage.py createsuperuser
+```
+
+## 8. Ejecutar servidor
+
+```bash
+python manage.py runserver
+```
+
+## 9. Abrir el proyecto en el navegador
+
+```txt
+http://127.0.0.1:8000/
+```
+
+## Panel de administración Django
+
+```txt
+http://127.0.0.1:8000/admin/
+```
