@@ -8,7 +8,9 @@ La aplicación es un blog musical dedicado a la banda argentina **Airbag**, con 
 # Repositorio
 
 - GitHub: https://github.com/IvannaAr94/ENTREGAFINAL-Arzamendia-BlogAirbag-Python-Django
+  
 -En la carpeta esta el VIDEO.
+
 -ONEDRIVE: https://1drv.ms/f/c/1ee7f3dd5a9dfa96/IgD3Eq18_hiZQpREmNyhrYf1AX6tfcySZZMt8N4RT_Ignd4?e=SDsfow 
 ---
 
